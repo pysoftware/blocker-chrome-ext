@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
   if (
       window.location.href.match(/vk|instagram/)
   ) {
-    if (currentHour - maxHour > 0) {
+    if (currentHour - maxHour > 0 && currentHour >= minHour) {
       window.document.documentElement.innerHTML = `
       <div class="center">
         <h1>
