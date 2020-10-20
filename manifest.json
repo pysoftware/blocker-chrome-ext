@@ -1,0 +1,29 @@
+{
+  "name": "Blocker",
+  "version": "1.0",
+  "description": "Blocker",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "blocker.js"
+      ],
+      "run_at": "document_start",
+      "css": [
+        "style.css"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs"
+  ]
+}
