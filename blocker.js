@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
   let leftHours = maxHour - date.getHours() - 1;
 
   if (
-      window.location.href.match(/vk|instagram/)
+      window.location.href.match(/vk\.com|instagram\.com/)
   ) {
     if (maxHour - currentHour > 0 && currentHour >= minHour) {
       window.document.documentElement.innerHTML = `
